@@ -70,21 +70,28 @@ section {
 
 .gallery {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   gap: 2px;
   flex: 30%;
-}
-img {
-  width: 100%;
 }
 
 main {
   padding: 20px;
 }
-.resize {
-  width: 75px;
-  height: 75 px;
-}
+
 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.objetfit {
+  width: 200px;
+  height: 200px;
+  object-fit: none;
+  background-color: black;
+  border: 3px solid #ff9daa;
+}
+.clip {
+  clip-path: inset(20px 60px 20px 0px);
 }
