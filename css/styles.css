@@ -1,5 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 body {
   background-color: aqua;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+ul li ul.dropdown {
+  min-width: 100%; /* Set width of the dropdown */
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul li:hover ul.dropdown {
+  display: block; /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+nav {
+  display: flex;
+}
+
+.button {
+  border: 1px, solid;
+}
+
+p {
+  font-size: xx-large;
+}
+
+h1 {
+  font-size: medium;
 }
 
 /*# sourceMappingURL=styles.css.map */
