@@ -9,6 +9,7 @@ header {
   justify-content: space-between;
   border-bottom: 3px solid gray;
   box-shadow: 300px grey;
+  padding: 25px;
 }
 
 body {
@@ -37,22 +38,22 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #fff;
+  color: orange;
 }
 
-ul li ul.dropdown {
-  min-width: 100%; /* Set width of the dropdown */
+ul li ul.floatMenu {
+  min-width: 100%; /* Set width of the floatMenu */
   display: none;
   position: absolute;
   z-index: 999;
   left: 0;
 }
 
-ul li:hover ul.dropdown {
-  display: block; /* Display the dropdown */
+ul li:hover ul.floatMenu {
+  display: block; /* Display the floatMenu */
 }
 
-ul li ul.dropdown li {
+ul li ul.floatMenu li {
   display: block;
 }
 
@@ -67,11 +68,11 @@ nav {
 }
 
 p {
-  font-size: xx-large;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 h1 {
-  font-size: large;
   color: orange;
 }
 
@@ -80,17 +81,25 @@ section {
   justify-content: space-between;
 }
 
-section.galery {
+.gallery {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2px;
+  flex: 30%;
 }
 
 img {
-  height: 25%;
+  width: 100%;
 }
 
 main {
   padding: 20px;
+}
+
+.resize {
+  width: 75px;
+  height: 75 px;
 }
 
 /*# sourceMappingURL=styles.css.map */
