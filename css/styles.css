@@ -1,5 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px -3px grey;
+  padding: 25px;
+}
+
 body {
-  background-color: aqua;
+  font-family: "Nunito";
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+ul li a {
+  display: block;
+  padding: 8px 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  box-shadow: 0px 2px orange;
+}
+
+ul li a:hover.button {
+  color: white;
+  box-shadow: 0px 2px orange;
+}
+
+ul li ul.floatMenu {
+  min-width: 200%;
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+}
+
+ul li:hover ul.floatMenu {
+  display: block;
+}
+
+ul li ul.floatMenu li {
+  display: block;
+}
+
+nav {
+  display: flex;
+}
+
+.button {
+  border-style: solid;
+  border-radius: 5px 50px 50px 50px;
+  border-color: orange;
+}
+
+.button:hover {
+  color: white;
+  background-color: orange;
+  box-shadow: 0px 2px orange;
+}
+
+.takeALook {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h1 {
+  color: orange;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  padding: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: medium;
+}
+
+.objetfit {
+  width: 220px;
+  height: 300px;
+  object-fit: none;
+}
+
+.fadeout {
+  font-family: "Nunito";
+  color: white;
+}
+
+.fadeout:hover {
+  opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.fadeout {
+  position: absolute;
+  top: -100;
+  left: 200;
+  z-index: 2;
+  padding: 50px;
+  margin: 0;
+}
+
+div.text:hover {
+  display: block;
+}
+
+div.textOverImage {
+  font-size: medium;
+}
+
+.textOverImage {
+  font-size: medium;
 }
 
 /*# sourceMappingURL=styles.css.map */

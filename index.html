@@ -15,42 +15,64 @@
 
 <body>
   <header>
-    <img src="images/logo2.png" alt="logo en forma de huella">
-    <nav>
+    <img class="resize" width="75px" height="75px" src="images/logo2.png" alt="logo en forma de huella">
+    <nav class="underline">
       <ul>
-        <li>Home</li>
-        <li>Live Demo</li>
-        <ul>
-          <li>Pets Boarding Services</li>
-          <li>Pets Toys and Food Shop</li>
-          <li>Pets Training School</li>
-        </ul>
-        <li>Live Demo Blocks</li>
-        <li><img src="images/buyNow.png"></li>
-
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Live Demo ▾</a>
+          <ul class="floatMenu">
+            <li><a href="#">Pets Boarding Services</a></li>
+            <li><a href="#">Pet Toys and Food shop</a></li>
+            <li><a href="#">Pets Training School</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Live Demo Blocks ▾</a></li>
+        <li class="button"><a href="#">BUY NOW</a></li>
       </ul>
+
     </nav>
   </header>
   <main>
     <section>
       <div>
         <h1>PET ACTIVITIES</h1>
-        <p> Take a closer look</p>
+        <p class="takeALook"> Take a closer look</p>
       </div>
       <div>
-        <img src="images/viewAll.png" alt="Botón para dirigirme a ver todos los articulos">>
+        <ul>
+          <li class="button"><a href="#">VIEW ALL</a></li>
+        </ul>
       </div>
     </section>
-    <section>
-      <article>
-        <img src="images/01.jpg" alt="Perro mordiendo cerdito de goma en una jardín">
-      </article>
-      <article>
-        <img src="images/02.jpg" alt=" Perro mordiendo cerdito de goma en una jardín">
-      </article>
-      <article>
-        <img src="images/03.jpg" alt=" Perro mordiendo cerdito de goma en una jardín">
-      </article>
+
+    <section class="gallery" class="clip">
+      <div class="objetfit">
+        <div class="fadeout">
+          <h3>ACTIVITIES</h3>
+          <p class="textOverImage"> Toys Playtime</p>
+        </div>
+        <img src="images/01.png" height="300px" alt=" gatito tumbado mirando a la camara">
+      </div>
+
+      <div class="objetfit">
+        <div class="fadeout">
+          <h3>ACTIVITIES</h3>
+          <p class="textOverImage"> Active Rest</p>
+        </div>
+        <img src="images/02.png" height="300px" alt=" gatito tumbado mirando a la camara">
+      </div>
+
+      <div class="objetfit">
+        <div class="fadeout">
+          <h3>ACTIVITIES</h3>
+          <p class="textOverImage"> Game Walks</p>
+        </div>
+        <img src="images/03.png" height="300px" alt=" gatito tumbado mirando a la camara">
+      </div>
+
+
+
     </section>
 
   </main>
