@@ -99,16 +99,23 @@ main {
   justify-content: center;
 }
 
-.objetfit {
-  width: 200px;
-  height: 200px;
+.objetfit > imag {
+  width: 220px;
+  height: 300px;
   object-fit: none;
-  background-color: black;
-  border: 3px solid #ff9daa;
 }
 
 .clip {
   clip-path: inset(20px 60px 20px 0px);
+}
+
+.fadeout:hover {
+  opacity: 0.07;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 /*# sourceMappingURL=styles.css.map */
