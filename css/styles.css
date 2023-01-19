@@ -7,8 +7,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 3px solid gray;
-  box-shadow: 300px grey;
+  box-shadow: 0px 2px 4px -3px grey;
   padding: 25px;
 }
 
@@ -38,11 +37,16 @@ ul li a {
 }
 
 ul li a:hover {
-  color: orange;
+  box-shadow: 0px 2px orange;
+}
+
+ul li a:hover.button {
+  color: white;
+  box-shadow: 0px 2px orange;
 }
 
 ul li ul.floatMenu {
-  min-width: 100%; /* Set width of the floatMenu */
+  min-width: 200%;
   display: none;
   position: absolute;
   z-index: 999;
@@ -50,7 +54,7 @@ ul li ul.floatMenu {
 }
 
 ul li:hover ul.floatMenu {
-  display: block; /* Display the floatMenu */
+  display: block;
 }
 
 ul li ul.floatMenu li {
@@ -67,8 +71,14 @@ nav {
   border-color: orange;
 }
 
-p {
-  font-size: 3rem;
+.button:hover {
+  color: white;
+  background-color: orange;
+  box-shadow: 0px 2px orange;
+}
+
+.takeALook {
+  font-size: 2rem;
   font-weight: 900;
 }
 
@@ -81,14 +91,6 @@ section {
   justify-content: space-between;
 }
 
-.gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2px;
-  flex: 30%;
-}
-
 main {
   padding: 20px;
 }
@@ -97,16 +99,18 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: medium;
 }
 
-.objetfit > imag {
+.objetfit {
   width: 220px;
   height: 300px;
   object-fit: none;
 }
 
-.clip {
-  clip-path: inset(20px 60px 20px 0px);
+.fadeout {
+  font-family: "Nunito";
+  color: white;
 }
 
 .fadeout:hover {
@@ -116,6 +120,27 @@ main {
   -o-transition: opacity 500ms;
   -ms-transition: opacity 500ms;
   transition: opacity 500ms;
+}
+
+.fadeout {
+  position: absolute;
+  top: -100;
+  left: 200;
+  z-index: 2;
+  padding: 50px;
+  margin: 0;
+}
+
+div.text:hover {
+  display: block;
+}
+
+div.textOverImage {
+  font-size: medium;
+}
+
+.textOverImage {
+  font-size: medium;
 }
 
 /*# sourceMappingURL=styles.css.map */
